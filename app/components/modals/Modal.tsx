@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react"
 import { IoMdClose } from 'react-icons/io'
+
 import Button from "../Button"
 
 type ModalProps = {
@@ -86,7 +87,7 @@ const Modal = ({
                             </div>
                             {/* BODY */}
                             <div className="relative p-6 flex-auto">
-
+                                {body}
                             </div>
                             {/* FOOTER */}
                             <div className="flex flex-col gap-2 p-6">
@@ -104,6 +105,7 @@ const Modal = ({
                                         onClick={handleSubmit}
                                     />
                                 </div>
+                                {footer}
                             </div>
                         </div>
                     </div>
